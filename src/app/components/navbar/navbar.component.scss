@@ -1,0 +1,40 @@
+.navbar-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  z-index: 20;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  padding: 5px;
+}
+
+.menu a::before,
+.menu .active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform-origin: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu a::before {
+  transform: scaleX(0);
+}
+
+.menu .active::before {
+  transform: scaleX(1);
+}
+
+.menu a:hover::before {
+  transform: scaleX(1);
+}
