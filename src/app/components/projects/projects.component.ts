@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { projects_sp } from './data';
+
 
 @Component({
   selector: 'app-projects',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
+  projects = projects_sp;
   constructor() { }
 
   ngOnInit(): void {
