@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ProjectInfoComponent } from './components/project-info/project-info.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ProjectInfoComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { projects_sp } from './data';
+import { Router } from '@angular/router';
+import { project_sp } from '../../database/project';
 
 
 @Component({
@@ -8,10 +9,16 @@ import { projects_sp } from './data';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  projects = projects_sp;
-  constructor() { }
+  
+  projects = project_sp;
+
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  projectInfo(projet_id: number): void{
+    this.router.navigate(['project-info', projet_id]);
   }
 
 }
