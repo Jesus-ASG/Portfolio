@@ -14,16 +14,16 @@
 
 <div class="fullscreen" [ngClass]="{ 'open': fullscreenOpen }" (click)="closeFullscreen()">
   <div class="fullscreen-inner">
-    
-    <div class="image" (click)="$event.stopPropagation()">
-      <button class="close" (click)="closeFullscreen()"><span><i class="fa-solid fa-xmark"></i></span></button>
-      <button class="prev" (click)="prevImage($event)"><span><i class="fa-solid fa-angle-left"></i></span></button>
-      <img src="{{ currentImage }}" alt="Image">
-      <button class="next" (click)="nextImage($event)"><span><i class="fa-solid fa-angle-right"></i></span></button>
-    </div>
-    <div class="controls">
-      
-      
+    <div class="image-modal">
+      <div class="controls">
+        <p>{{ (currentIndex + 1) }} / {{ totalImages }}</p>
+        <button class="close" (click)="closeFullscreen()"><span><i class="fa-solid fa-xmark"></i></span></button>
+      </div>
+      <div class="image" (click)="$event.stopPropagation()">
+        <button class="prev" (click)="prevImage($event)"><span><i class="fa-solid fa-angle-left"></i></span></button>
+        <img src="{{ currentImage }}" alt="Image">
+        <button class="next" (click)="nextImage($event)"><span><i class="fa-solid fa-angle-right"></i></span></button>
+      </div>
     </div>
   </div>
 </div>

@@ -13,11 +13,13 @@ export class CarouselComponent {
   fullscreenOpen : boolean = false;
   currentImage !: string;
   currentIndex !: number;
+  totalImages !: number;
 
   constructor() { }
 
   ngOnInit() {
     this.updateVisibleImages();
+    this.totalImages = this.images.length;
   }
 
   updateVisibleImages() {
