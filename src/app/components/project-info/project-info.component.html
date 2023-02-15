@@ -1,4 +1,5 @@
 <div *ngIf="project" class="background">
+
 	<div class="main-content mt-3">
 		<div class="container description">
 			<div class="row">
@@ -6,15 +7,12 @@
 					<h1 class="my-3 text-center">{{ project.name }}</h1>
 				</div>
 			</div>
-		</div>
-	</div>
-
-
-	<div class="main-content mt-3">
-		<div class="container description">
-			<div class="row my-3 py-3">
+			<div class="row py-3">
 				<div class="col-12">
-					<p class="fw-bold fst-italic">Descripción:</p>
+					<p class="fw-bold fst-italic">Tecnologías</p>
+					<img *ngFor="let badge of project.badges" src="/assets/images/badges/{{ badge }}.svg" alt="">
+					<br><br>
+					<p class="fw-bold fst-italic">Resumen</p>
 					<p>{{ project.description }}</p>
 				</div>
 			</div>
@@ -26,7 +24,7 @@
 		<div class="container description">
 			<div class="row my-3 py-3">
 				<div class="col-12">
-					<p class="fw-bold fst-italic">Características de la aplicación:</p>
+					<p class="fw-bold fst-italic">Características de la aplicación</p>
 					<ul class="text-start">
 						<li *ngFor="let f of project.application_features">
 							{{ f }}
@@ -42,7 +40,7 @@
 		<div class="container description">
 			<div class="row my-3 py-3">
 				<div class="col-12">
-					<p class="fw-bold fst-italic">Características técnicas de la aplicación:</p>
+					<p class="fw-bold fst-italic">Características técnicas de la aplicación</p>
 					<ul class="text-start">
 						<li *ngFor="let f of project.application_technical_features">
 							{{ f }}
@@ -58,12 +56,25 @@
 		<div class="container description">
 			<div class="row my-3 py-3">
 				<div class="col-12">
-					<p class="fw-bold fst-italic">Capturas de pantalla:</p>
-					
+					<p class="fw-bold fst-italic">Capturas de pantalla</p>
+					<div *ngFor="let image of project.screenshots" class="screenshots mt-3">
+						<img src="{{ image }}" alt="{{ image }}">
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+	<div class="main-content">
+    <div class="link-buttons">
+      <div class="d-flex w-100 text-center">
+        <div class="see-more-btn m-auto" style="max-width: 300px;">
+          <p routerLink="/projects">Regresar a ver proyectos</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 	<div class="main-content mt-3"></div>

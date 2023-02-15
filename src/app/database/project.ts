@@ -22,6 +22,7 @@ export const project_sp = [
       "Uso de un servidor caché para guardar variables temporales.",
     ],
     "screenshots": [
+      "/assets/data_projects/story_quest/sq_t.png",
       "/assets/data_projects/story_quest/im1.png",
       "/assets/data_projects/story_quest/im2.png",
       "/assets/data_projects/story_quest/im3.png", 
@@ -41,6 +42,14 @@ export const project_sp = [
     "badges": ["android_studio", "java", "firebase"],
     "application_features": [""],
     "application_technical_features": [""],
-    "screenshots": ["/assets/data_projects/story_quest/s3.png"]
+    "screenshots": [
+      "/assets/data_projects/jhim_delivery/jd_t.png",
+      "/assets/data_projects/jhim_delivery/s1.png",
+      "/assets/data_projects/jhim_delivery/s2.png",
+      "/assets/data_projects/jhim_delivery/s3.png",
+      "/assets/data_projects/jhim_delivery/s4.png",
+      "/assets/data_projects/jhim_delivery/s5.png",
+      "/assets/data_projects/jhim_delivery/s6.png"
+    ]
   }
 ]
