@@ -13,7 +13,7 @@
       <div class="row my-3 py-3">
         <div class="col-12 col-md-6">
           <div class="thumbnail-container">
-            <img src="{{ project.img_folder }}{{ project.thumbnail }}" alt="">
+            <img src="{{ project.thumbnail }}" alt="">
           </div>
         </div>
         <div class="col-12 col-md-6">
@@ -26,6 +26,9 @@
           <br>
 
           <img *ngFor="let badge of project.badges" src="/assets/images/badges/{{ badge }}.svg" alt="">
+          <br>
+          <p class="fw-bold fst-italic">Capturas de pantalla:</p>
+          <app-carousel [images]="project.screenshots"></app-carousel>
         </div>
       </div>
     </div>

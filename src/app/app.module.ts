@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectInfoComponent } from './components/project-info/project-info.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HomeComponent,
     ProjectsComponent,
     ProjectInfoComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

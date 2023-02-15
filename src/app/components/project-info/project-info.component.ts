@@ -12,6 +12,7 @@ export class ProjectInfoComponent implements OnInit {
   project_id !: number;
   projects = project_sp;
   project : any;
+  imageArray:string[] = [];
 
   constructor(
     private readonly route: ActivatedRoute,
@@ -25,6 +26,13 @@ export class ProjectInfoComponent implements OnInit {
     this.project = this.projects.find(e => e.id == this.project_id);
     if (!this.project){
       this.router.navigate(['/404']);
+    }
+    else{
+      for (let i of this.project.screenshots){
+        let path:string = this.project.img_folder + i;
+        this.imageArray.push(path);
+      }
+      
     }
     
   }

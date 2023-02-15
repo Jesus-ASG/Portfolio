@@ -2,8 +2,7 @@ export const project_sp = [
   {
     "id": 1,
     "name": "Story Quest",
-    "img_folder": "/assets/data_projects/story_quest/",
-    "thumbnail": "sq_t.png",
+    "thumbnail": "/assets/data_projects/story_quest/sq_t.png",
     "description": "Aplicación web/móvil para aprender inglés mediante historias cortas, siendo sus principales recursos la pronunciación correcta de palabras.",
     "badges": ["django", "python", "html5", "css3", "javascript", "mysql"],
     "application_features": [
@@ -22,7 +21,17 @@ export const project_sp = [
       "Uso de python para redimensionar imágenes subidas.",
       "Uso de un servidor caché para guardar variables temporales.",
     ],
-    "screenshots": ["im1.png", "im2.png", "im3.png", "im4.png", "im5.png", "im6.png", "s1.png", "s2.png", "s3.png"]
+    "screenshots": [
+      "/assets/data_projects/story_quest/im1.png",
+      "/assets/data_projects/story_quest/im2.png",
+      "/assets/data_projects/story_quest/im3.png", 
+      "/assets/data_projects/story_quest/im4.png", 
+      "/assets/data_projects/story_quest/im5.png", 
+      "/assets/data_projects/story_quest/im6.png", 
+      "/assets/data_projects/story_quest/s1.png", 
+      "/assets/data_projects/story_quest/s2.png", 
+      "/assets/data_projects/story_quest/s3.png"
+    ]
   },
   {
     "id": 2,
@@ -32,6 +41,6 @@ export const project_sp = [
     "badges": ["android_studio", "java", "firebase"],
     "application_features": [""],
     "application_technical_features": [""],
-    "screenshots": [""]
+    "screenshots": ["/assets/data_projects/story_quest/s3.png"]
   }
 ]

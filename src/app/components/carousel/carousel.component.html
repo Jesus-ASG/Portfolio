@@ -1,0 +1,29 @@
+<div class="carousel">
+  <div class="carousel-items">
+    <div *ngFor="let image of visibleImages" class="carousel-item" (click)="openFullscreen(image)">
+      <img src="{{ image }}" alt="Image">
+    </div>
+    <div *ngIf="remainingImages > 0" class="carousel-item" (click)="openFullscreen(visibleImages[2])">
+      <div class="more-indicator">
+        <div class="plus">+</div>
+        <div class="count">{{ remainingImages }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="fullscreen" [ngClass]="{ 'open': fullscreenOpen }" (click)="closeFullscreen()">
+  <div class="fullscreen-inner">
+    
+    <div class="image" (click)="$event.stopPropagation()">
+      <button class="close" (click)="closeFullscreen()"><span><i class="fa-solid fa-xmark"></i></span></button>
+      <button class="prev" (click)="prevImage($event)"><span><i class="fa-solid fa-angle-left"></i></span></button>
+      <img src="{{ currentImage }}" alt="Image">
+      <button class="next" (click)="nextImage($event)"><span><i class="fa-solid fa-angle-right"></i></span></button>
+    </div>
+    <div class="controls">
+      
+      
+    </div>
+  </div>
+</div>
