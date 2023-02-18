@@ -1,0 +1,15 @@
+.download-cv{
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 .8rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.download-cv:hover{
+  color: rgb(220, 28, 28);
+}
+
+.download-cv i{
+  color:rgb(220, 28, 28);
+}
+

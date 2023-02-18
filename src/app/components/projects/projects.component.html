@@ -1,11 +1,7 @@
 <div class="background">
-  <div class="main-content mt-3">
-    <div class="container description">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="my-3 text-center">Mis proyectos</h1>
-        </div>
-      </div>
+  <div class="main-content">
+    <div class="title description">
+      <h1 class="my-3 text-center">Mis proyectos</h1>
     </div>
   </div>
   <div *ngFor="let project of projects" class="main-content mt-3">
@@ -20,7 +16,7 @@
             </div>
           </div>
           <div class="row my-3">
-            <div class="col-12">
+            <div class="col-12 d-block d-md-none">
               <div (click)="projectInfo(project.id)" class="see-more-btn">
                 <p>Ver más</p>
               </div>
@@ -37,6 +33,11 @@
           <br><br>
           <p class="fw-bold fst-italic">Capturas de pantalla</p>
           <app-carousel [images]="project.screenshots"></app-carousel>
+        </div>
+        <div class="col-12 d-none d-md-block text-center">
+          <div (click)="projectInfo(project.id)" class="see-more-btn d-inline-block w-100" style="max-width: 750px;">
+            <p>Ver más</p>
+          </div>
         </div>
       </div>
     </div>

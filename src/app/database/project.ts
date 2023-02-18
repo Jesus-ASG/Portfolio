@@ -40,8 +40,18 @@ export const project_sp = [
     "thumbnail": "/assets/data_projects/jhim_delivery/jd_t.png",
     "description": "Aplicación móvil hecha en android studio para calcular rutas más cortas entre puntos de entrega en la ciudad, funciona con la API de google maps.",
     "badges": ["android_studio", "java", "firebase"],
-    "application_features": [""],
-    "application_technical_features": [""],
+    "application_features": [
+      "Ingresa con un usuario y contraseña para ver el recorrido de los lugares que se desean visitar.",
+      "Muestra la ubicación del usuario en tiempo real.",
+      "Muestra una lista de los lugares por visitar."
+
+    ],
+    "application_technical_features": [
+      "Funciona con la API de google maps.",
+      "Hecho en Android Studio con java.",
+      "Botones para alternar entre vista en mapa 2D o a satélite.",
+      "Datos guardados en Firebase."
+    ],
     "screenshots": [
       "/assets/data_projects/jhim_delivery/jd_t.png",
       "/assets/data_projects/jhim_delivery/s1.png",

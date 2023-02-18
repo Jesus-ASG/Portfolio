@@ -9,6 +9,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ProjectInfoComponent } from './components/project-info/project-info.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ProjectsComponent,
     ProjectInfoComponent,
     PageNotFoundComponent,
-    CarouselComponent
+    CarouselComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
