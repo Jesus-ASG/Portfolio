@@ -10,7 +10,25 @@ import { project_sp } from '../../database/project';
 })
 export class ProjectsComponent implements OnInit {
 
-  projects = project_sp;
+  projects = [
+    {
+      "id": 0,
+      "priority": 0,
+      "name": "",
+      "thumbnail": "",
+      "description": "",
+      "badges": [""],
+      "application_features": [
+        ""
+      ],
+      "application_technical_features": [
+        ""
+      ],
+      "screenshots": [
+        "",
+      ]
+    }
+  ];
 
   constructor(
     private readonly router: Router,
@@ -18,11 +36,12 @@ export class ProjectsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    this.projects = project_sp.sort((a, b) =>{ return a.priority - b.priority;});
     this.renderer.setProperty(document.body, 'scrollTop', 0);
   }
-
+  /*
   projectInfo(projet_id: number): void {
     this.router.navigate(['project-info', projet_id]);
-  }
+  }*/
 
 }
