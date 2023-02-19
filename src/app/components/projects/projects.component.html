@@ -28,7 +28,7 @@
           <p>{{ project.description }}</p>
           <br>
           <p class="fw-bold fst-italic">Tecnologías</p>
-          <img *ngFor="let badge of project.badges" src="/assets/images/badges/{{ badge }}.svg" alt="">
+          <img *ngFor="let badge of project.badges" src="assets/images/badges/{{ badge }}.svg" alt="">
           <br><br>
           <p class="fw-bold fst-italic">Capturas de pantalla</p>
           <app-carousel [images]="project.screenshots"></app-carousel>

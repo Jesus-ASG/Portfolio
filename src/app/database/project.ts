@@ -3,7 +3,7 @@ export const project_sp = [
     "id": 1,
     "priority": 1,
     "name": "Story Quest",
-    "thumbnail": "/assets/data_projects/story_quest/sq_t.png",
+    "thumbnail": "assets/data_projects/story_quest/sq_t.png",
     "description": "Aplicación web/móvil para aprender inglés mediante historias cortas, siendo sus principales recursos la pronunciación correcta de palabras.",
     "badges": ["django", "python", "html5", "css3", "javascript", "mysql"],
     "application_features": [
@@ -25,23 +25,23 @@ export const project_sp = [
       "Uso de un servidor caché para guardar variables temporales.",
     ],
     "screenshots": [
-      "/assets/data_projects/story_quest/sq_t.png",
-      "/assets/data_projects/story_quest/im1.png",
-      "/assets/data_projects/story_quest/im2.png",
-      "/assets/data_projects/story_quest/im3.png", 
-      "/assets/data_projects/story_quest/im4.png", 
-      "/assets/data_projects/story_quest/im5.png", 
-      "/assets/data_projects/story_quest/im6.png", 
-      "/assets/data_projects/story_quest/s1.png", 
-      "/assets/data_projects/story_quest/s2.png", 
-      "/assets/data_projects/story_quest/s3.png"
+      "assets/data_projects/story_quest/sq_t.png",
+      "assets/data_projects/story_quest/im1.png",
+      "assets/data_projects/story_quest/im2.png",
+      "assets/data_projects/story_quest/im3.png", 
+      "assets/data_projects/story_quest/im4.png", 
+      "assets/data_projects/story_quest/im5.png", 
+      "assets/data_projects/story_quest/im6.png", 
+      "assets/data_projects/story_quest/s1.png", 
+      "assets/data_projects/story_quest/s2.png", 
+      "assets/data_projects/story_quest/s3.png"
     ]
   },
   {
     "id": 2,
     "priority": 30,
     "name": "JHIM Delivery",
-    "thumbnail": "/assets/data_projects/jhim_delivery/jd_t.png",
+    "thumbnail": "assets/data_projects/jhim_delivery/jd_t.png",
     "description": "Aplicación móvil para calcular rutas más cortas entre puntos de entrega en la ciudad, funciona con la API de google maps.",
     "badges": ["android_studio", "java", "firebase"],
     "application_features": [
@@ -58,20 +58,20 @@ export const project_sp = [
       "Datos guardados en Firebase."
     ],
     "screenshots": [
-      "/assets/data_projects/jhim_delivery/jd_t.png",
-      "/assets/data_projects/jhim_delivery/s1.png",
-      "/assets/data_projects/jhim_delivery/s2.png",
-      "/assets/data_projects/jhim_delivery/s3.png",
-      "/assets/data_projects/jhim_delivery/s4.png",
-      "/assets/data_projects/jhim_delivery/s5.png",
-      "/assets/data_projects/jhim_delivery/s6.png"
+      "assets/data_projects/jhim_delivery/jd_t.png",
+      "assets/data_projects/jhim_delivery/s1.png",
+      "assets/data_projects/jhim_delivery/s2.png",
+      "assets/data_projects/jhim_delivery/s3.png",
+      "assets/data_projects/jhim_delivery/s4.png",
+      "assets/data_projects/jhim_delivery/s5.png",
+      "assets/data_projects/jhim_delivery/s6.png"
     ]
   },
   {
     "id": 3,
     "priority": 2,
     "name": "Backpropagation Neural Network",
-    "thumbnail": "/assets/data_projects/bnn/bnn_t.png",
+    "thumbnail": "assets/data_projects/bnn/bnn_t.png",
     "description": "Red neuronal de regresión lineal (backpropagation) hecha únicamente con Python.",
     "badges": ["python"],
     "application_features": [
@@ -86,20 +86,20 @@ export const project_sp = [
       "Se pueden modificar parámetros como la tasa de error, iteraciones, capas, etc."
     ],
     "screenshots": [
-      "/assets/data_projects/bnn/bnn_t.png",
-      "/assets/data_projects/bnn/s1.png",
-      "/assets/data_projects/bnn/s2.png",
-      "/assets/data_projects/bnn/s3.png",
-      "/assets/data_projects/bnn/s4.png",
-      "/assets/data_projects/bnn/s5.png"
+      "assets/data_projects/bnn/bnn_t.png",
+      "assets/data_projects/bnn/s1.png",
+      "assets/data_projects/bnn/s2.png",
+      "assets/data_projects/bnn/s3.png",
+      "assets/data_projects/bnn/s4.png",
+      "assets/data_projects/bnn/s5.png"
     ]
   },
   {
     "id": 4,
     "priority": 40,
     "name": "¡Conti-Trivia!",
-    "thumbnail": "/assets/data_projects/conti_trivia/ct_t.png",
-    "description": "Juego de trivia para saber cuánto se dabe sobre países y sus capitales.",
+    "thumbnail": "assets/data_projects/conti_trivia/ct_t.png",
+    "description": "Juego de trivia para saber cuánto se conoce sobre países y sus capitales.",
     "badges": ["java"],
     "application_features": [
       "Se selecciona un continente del cuál se desee jugar y aparecerán aleatoriamente banderas de países de el continente seleccionado.",
@@ -112,13 +112,13 @@ export const project_sp = [
       "Cambio de la imagen default del cursor según sea el caso."
     ],
     "screenshots": [
-      "/assets/data_projects/conti_trivia/ct_t.png",
-      "/assets/data_projects/conti_trivia/s1.png",
-      "/assets/data_projects/conti_trivia/s2.png",
-      "/assets/data_projects/conti_trivia/s3.png",
-      "/assets/data_projects/conti_trivia/s4.png",
-      "/assets/data_projects/conti_trivia/s5.png",
-      "/assets/data_projects/conti_trivia/s6.png",
+      "assets/data_projects/conti_trivia/ct_t.png",
+      "assets/data_projects/conti_trivia/s1.png",
+      "assets/data_projects/conti_trivia/s2.png",
+      "assets/data_projects/conti_trivia/s3.png",
+      "assets/data_projects/conti_trivia/s4.png",
+      "assets/data_projects/conti_trivia/s5.png",
+      "assets/data_projects/conti_trivia/s6.png",
     ]
   }
 
