@@ -1,6 +1,7 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Router } from '@angular/router';
-import { project_sp } from '../../database/database_projects';
+import { DatabaseHandlerService } from 'src/app/services/database-handler.service';
+import { Project } from 'src/app/models/project';
 
 
 @Component({
@@ -9,34 +10,18 @@ import { project_sp } from '../../database/database_projects';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-
-  projects = [
-    {
-      "id": 0,
-      "priority": 0,
-      "name": "",
-      "thumbnail": "",
-      "description": "",
-      "badges": [""],
-      "application_features": [
-        ""
-      ],
-      "application_technical_features": [
-        ""
-      ],
-      "screenshots": [
-        "",
-      ]
-    }
-  ];
+ projects: Project[] = [];
 
   constructor(
     private readonly router: Router,
-    private readonly renderer: Renderer2
+    private readonly renderer: Renderer2,
+    private databaseHandler: DatabaseHandlerService
   ) { }
 
   ngOnInit(): void {
-    this.projects = project_sp.sort((a, b) =>{ return a.priority - b.priority;});
+    this.projects = this.databaseHandler.getProjects();
+
+    this.projects = this.projects.sort((a, b) =>{ return b.priority - a.priority;});
     this.renderer.setProperty(document.body, 'scrollTop', 0);
   }
   /*

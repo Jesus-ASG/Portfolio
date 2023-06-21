@@ -1,7 +1,7 @@
 export const project_sp = [
   {
     "id": 1,
-    "priority": 1,
+    "priority": 100,
     "name": "Story Quest",
     "thumbnail": "assets/data_projects/story_quest/sq_t.png",
     "description": "Aplicación web/móvil para aprender inglés mediante historias cortas, siendo sus principales recursos la pronunciación correcta de palabras.",
@@ -39,7 +39,7 @@ export const project_sp = [
   },
   {
     "id": 2,
-    "priority": 30,
+    "priority": 50,
     "name": "JHIM Delivery",
     "thumbnail": "assets/data_projects/jhim_delivery/jd_t.png",
     "description": "Aplicación móvil para calcular rutas más cortas entre puntos de entrega en la ciudad, funciona con la API de google maps.",
@@ -69,7 +69,7 @@ export const project_sp = [
   },
   {
     "id": 3,
-    "priority": 2,
+    "priority": 90,
     "name": "Backpropagation Neural Network",
     "thumbnail": "assets/data_projects/bnn/bnn_t.png",
     "description": "Red neuronal de regresión lineal (backpropagation) hecha únicamente con Python.",
@@ -96,7 +96,7 @@ export const project_sp = [
   },
   {
     "id": 4,
-    "priority": 40,
+    "priority": 0,
     "name": "¡Conti-Trivia!",
     "thumbnail": "assets/data_projects/conti_trivia/ct_t.png",
     "description": "Juego de trivia para saber cuánto se conoce sobre países y sus capitales.",
@@ -123,7 +123,7 @@ export const project_sp = [
   },
   {
     "id": 5,
-    "priority": 2,
+    "priority": 50,
     "name": "Nutri Race",
     "thumbnail": "assets/data_projects/nutri_race/Imagen8.png",
     "screenshots": [
@@ -153,6 +153,34 @@ export const project_sp = [
       "Generación de nivel automática.",
       "Sonidos al comer saludable y no saludable.",
       "Objetos que no son visibles son destruidos para ahorrar recursos y hacer el juego más fluido."
+    ]
+  },
+  {
+    "id": 6,
+    "priority": 50,
+    "name": "Tic Tac Toe!",
+    "thumbnail": "assets/data_projects/tic_tac_toe/6.jpg",
+    "screenshots": [
+      "assets/data_projects/tic_tac_toe/7.jpg",
+      "assets/data_projects/tic_tac_toe/6.jpg",
+      "assets/data_projects/tic_tac_toe/5.jpg",
+      "assets/data_projects/tic_tac_toe/4.jpg",
+      "assets/data_projects/tic_tac_toe/3.jpg",
+      "assets/data_projects/tic_tac_toe/2.jpg",
+      "assets/data_projects/tic_tac_toe/1.jpg"
+    ],
+    "description": "Famoso juego de tres en raya también conocido como \"Gato\".",
+    "badges": [
+      "unity",
+      "android"
+    ],
+    "application_features": [
+      "Juega al gato contra la máquina o contra un amigo.",
+      "Registra la puntuación para saber quién ha ganado o perdido más."
+    ],
+    "application_technical_features": [
+      "Echo en Unity.",
+      "El algoritmo del oponente permite que le sea posible tanto perder como ganar."
     ]
   }
 

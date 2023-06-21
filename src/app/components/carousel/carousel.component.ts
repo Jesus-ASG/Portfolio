@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-carousel',
@@ -6,6 +6,21 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./carousel.component.scss']
 })
 export class CarouselComponent {
+  @HostListener('window:keyup', ['$event'])
+  keyEvent(event: KeyboardEvent){
+    
+    switch (event.key){
+      case 'ArrowLeft':
+        this.prevImage(event);
+        break;
+      case 'ArrowRight':
+        this.nextImage(event);
+        break;
+      case 'Escape':
+        this.closeFullscreen();
+        break;
+    }
+  }
   @Input() images !: string[];
 
   visibleImages !: string[];

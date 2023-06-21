@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { project_sp } from '../database/database_projects';
+import { Project } from '../models/project';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class DatabaseHandlerService {
-  projects: any;
+  projects: Project[];
   constructor() {
     this.projects = project_sp;
   }

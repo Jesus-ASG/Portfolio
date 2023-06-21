@@ -9,6 +9,7 @@ import { DatabaseHandlerService } from 'src/app/services/database-handler.servic
   styleUrls: ['./upload-project.component.scss']
 })
 export class UploadProjectComponent implements OnInit {
+  defaultPriority: number = 50;
   badges !: string[];
   selectedBadges: any = {};
   jsonResponse!: string;
