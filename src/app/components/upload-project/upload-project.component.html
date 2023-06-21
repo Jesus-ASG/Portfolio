@@ -1,0 +1,77 @@
+<h1 ngClass="upload-title">Upload project</h1>
+<div ngClass="upload-container">
+  <form ngClass="upload-form" #projectForm="ngForm" (ngSubmit)="upload(projectForm.value)">
+    <!-- 
+      <div ngClass="upload-item">
+        <label for="id">Id</label>
+        <input type="number" name="id" id="id" ngModel>
+      </div>
+    -->
+
+    <div ngClass="upload-item">
+      <label for="priority">Priority</label>
+      <input type="number" name="priority" id="priority" ngModel>
+    </div>
+
+    <div ngClass="upload-item">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" ngModel>
+    </div>
+
+    
+    <div ngClass="upload-item">
+      <label for="folder_name">Folder name</label>
+      <input type="text" name="folder_name" id="folder_name" ngModel required>
+    </div>
+    
+    <div ngClass="upload-item">
+      <label for="screenshots">Screenshots</label>
+      <input type="file" name="screenshots" id="screenshots" 
+      (change)="handleScreenshotsFiles($event.target)" multiple ngModel>
+      <div *ngIf="screenshotsPreviews">
+        <div *ngFor="let s of screenshotsPreviews" ngClass="img-pv-container">
+          <div ngClass="img-pv-background">
+            <img [src]="s.src" alt="{{ s.name }}">
+          </div>
+          <div ngClass="img-pv-name">
+            <p>{{ s.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div ngClass="upload-item">
+      <label for="thumbnail">Thumbnail</label>
+      <input type="text" name="thumbnail" id="thumbnail" ngModel>
+    </div>
+    
+    <div ngClass="upload-item">
+      <label for="description">Description</label>
+      <textarea type="text" name="description" id="description" ngModel>
+      </textarea>
+    </div>
+    
+    <div *ngIf="badges" ngClass="upload-item checkbox-form">
+      <div *ngFor="let badge of badges">
+        <input  type="checkbox" name="badges" [value]="badge" id="badge_{{ badge }}" [(ngModel)]="selectedBadges[badge]">
+        <label for="badge_{{ badge }}"><img src="assets/images/badges/{{ badge }}.svg" alt="{{ badge }}"></label>
+      </div>
+    </div>
+    
+    <div ngClass="upload-item">
+      <label for="application_features">Application features</label>
+      <textarea type="text" name="application_features" id="application_features" ngModel>
+      </textarea>
+    </div>
+    
+    <div ngClass="upload-item">
+      <label for="application_technical_features">Application technical features</label>
+      <textarea type="text" name="application_technical_features" id="application_technical_features" ngModel>
+      </textarea>
+    </div>
+
+    <button *ngIf="!projectForm.invalid">Generate json</button>
+
+  </form>
+</div>
+

@@ -120,6 +120,40 @@ export const project_sp = [
       "assets/data_projects/conti_trivia/s5.png",
       "assets/data_projects/conti_trivia/s6.png",
     ]
+  },
+  {
+    "id": 5,
+    "priority": 2,
+    "name": "Nutri Race",
+    "thumbnail": "assets/data_projects/nutri_race/Imagen8.png",
+    "screenshots": [
+      "assets/data_projects/nutri_race/Imagen10.png",
+      "assets/data_projects/nutri_race/Imagen9.png",
+      "assets/data_projects/nutri_race/Imagen8.png",
+      "assets/data_projects/nutri_race/Imagen7.png",
+      "assets/data_projects/nutri_race/Imagen6.png",
+      "assets/data_projects/nutri_race/Imagen5.png",
+      "assets/data_projects/nutri_race/Imagen4.png",
+      "assets/data_projects/nutri_race/Imagen3.png",
+      "assets/data_projects/nutri_race/Imagen2.png",
+      "assets/data_projects/nutri_race/Imagen1.png"
+    ],
+    "description": "Divertido juego estilo \"Endless Runner\".",
+    "badges": [
+      "unity",
+      "windows"
+    ],
+    "application_features": [
+      "Gana puntos recolectando comida saludable y avanzando.",
+      "Perderás al agotar tus vidas por el consumo de comida poco saludable.",
+      "Divertidas animaciones para correr, saltar y perder."
+    ],
+    "application_technical_features": [
+      "Hecho en Unity.",
+      "Generación de nivel automática.",
+      "Sonidos al comer saludable y no saludable.",
+      "Objetos que no son visibles son destruidos para ahorrar recursos y hacer el juego más fluido."
+    ]
   }
 
 ]

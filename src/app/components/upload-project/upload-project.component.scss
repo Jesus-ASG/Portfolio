@@ -1,0 +1,66 @@
+.upload-title{
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+.upload-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-form{
+  background-color: #fff;
+  border: 1px solid #000;
+  width: 700px;
+  padding: 1rem;
+  margin-bottom: 80vh;
+}
+
+.upload-item {
+  margin: 1rem 0;
+}
+.upload-item label{
+  display: inline-block;
+  width: 100%;
+}
+.upload-item{
+  input[type="text"], input[type="number"], textarea{
+    width: 100%;
+  }
+}
+
+.checkbox-form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.checkbox-form div{
+  display: flex;
+  margin: 1rem;
+  width: 150px;
+}
+
+.img-pv-container{
+  margin: 1rem 0;
+}
+
+.img-pv-background{
+  background-color: #000;
+  margin: 0.2rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-pv-name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p{
+    font-style: italic;
+  }
+
+}

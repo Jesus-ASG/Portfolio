@@ -5,10 +5,12 @@ import { HomeComponent } from './components/home/home.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { ProjectInfoComponent } from './components/project-info/project-info.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { UploadProjectComponent } from './components/upload-project/upload-project.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'projects', component: ProjectsComponent },
+  { path: 'projects/upload', component: UploadProjectComponent },
   { path: 'project-info/:project_id', component: ProjectInfoComponent },
   { path: 'contact', component: ContactComponent },
   { path: '404', component: PageNotFoundComponent },

@@ -10,6 +10,8 @@ import { ProjectInfoComponent } from './components/project-info/project-info.com
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { UploadProjectComponent } from './components/upload-project/upload-project.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { ContactComponent } from './components/contact/contact.component';
     ProjectInfoComponent,
     PageNotFoundComponent,
     CarouselComponent,
-    ContactComponent
+    ContactComponent,
+    UploadProjectComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

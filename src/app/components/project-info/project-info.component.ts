@@ -1,6 +1,6 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Params, Router } from '@angular/router';
-import { project_sp } from '../../database/project';
+import { project_sp } from '../../database/database_projects';
 
 @Component({
   selector: 'app-project-info',
