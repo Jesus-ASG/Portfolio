@@ -35,6 +35,7 @@ export class BadgesService {
     "python",
     "spring",
     "sqlite",
+    "swagger",
     "typescript",
     "ubuntu",
     "unity",
@@ -43,7 +44,7 @@ export class BadgesService {
 
   constructor() { }
 
-  getBadges(){
+  getBadges() {
     return this.badges;
   }
 }

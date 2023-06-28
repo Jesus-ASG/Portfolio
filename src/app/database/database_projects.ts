@@ -5,7 +5,7 @@ export const project_sp = [
     "name": "Story Quest",
     "thumbnail": "assets/data_projects/story_quest/sq_t.png",
     "description": "Aplicación web/móvil para aprender inglés mediante historias cortas, siendo sus principales recursos la pronunciación correcta de palabras.",
-    "badges": ["django", "python", "html5", "css3", "javascript", "mysql"],
+    "badges": ["css3", "bootstrap", "django", "html5", "mysql", "python", "javascript"],
     "application_features": [
       "Cuenta con un modo para administrar historias, etiquetas y páginas, el usuario no administrador sólo podrá contestar las historias.",
       "Pueden crearse historias con contenido visual y ejercicios los cuales el usuario podrá contestar y ser evaluado, obteniendo una calificación y estadísticas de sus habilidades en comprensión, pronunciación y escritura.",
@@ -28,12 +28,12 @@ export const project_sp = [
       "assets/data_projects/story_quest/sq_t.png",
       "assets/data_projects/story_quest/im1.png",
       "assets/data_projects/story_quest/im2.png",
-      "assets/data_projects/story_quest/im3.png", 
-      "assets/data_projects/story_quest/im4.png", 
-      "assets/data_projects/story_quest/im5.png", 
-      "assets/data_projects/story_quest/im6.png", 
-      "assets/data_projects/story_quest/s1.png", 
-      "assets/data_projects/story_quest/s2.png", 
+      "assets/data_projects/story_quest/im3.png",
+      "assets/data_projects/story_quest/im4.png",
+      "assets/data_projects/story_quest/im5.png",
+      "assets/data_projects/story_quest/im6.png",
+      "assets/data_projects/story_quest/s1.png",
+      "assets/data_projects/story_quest/s2.png",
       "assets/data_projects/story_quest/s3.png"
     ]
   },
@@ -69,7 +69,7 @@ export const project_sp = [
   },
   {
     "id": 3,
-    "priority": 90,
+    "priority": 70,
     "name": "Backpropagation Neural Network",
     "thumbnail": "assets/data_projects/bnn/bnn_t.png",
     "description": "Red neuronal de regresión lineal (backpropagation) hecha únicamente con Python.",
@@ -161,13 +161,13 @@ export const project_sp = [
     "name": "Tic Tac Toe!",
     "thumbnail": "assets/data_projects/tic_tac_toe/6.jpg",
     "screenshots": [
-      "assets/data_projects/tic_tac_toe/7.jpg",
-      "assets/data_projects/tic_tac_toe/6.jpg",
-      "assets/data_projects/tic_tac_toe/5.jpg",
-      "assets/data_projects/tic_tac_toe/4.jpg",
-      "assets/data_projects/tic_tac_toe/3.jpg",
+      "assets/data_projects/tic_tac_toe/1.jpg",
       "assets/data_projects/tic_tac_toe/2.jpg",
-      "assets/data_projects/tic_tac_toe/1.jpg"
+      "assets/data_projects/tic_tac_toe/3.jpg",
+      "assets/data_projects/tic_tac_toe/4.jpg",
+      "assets/data_projects/tic_tac_toe/5.jpg",
+      "assets/data_projects/tic_tac_toe/6.jpg",
+      "assets/data_projects/tic_tac_toe/7.jpg"
     ],
     "description": "Famoso juego de tres en raya también conocido como \"Gato\".",
     "badges": [
@@ -181,6 +181,52 @@ export const project_sp = [
     "application_technical_features": [
       "Echo en Unity.",
       "El algoritmo del oponente permite que le sea posible tanto perder como ganar."
+    ]
+  },
+  {
+    "id": 7,
+    "priority": 90,
+    "name": "SG Notebook (server)",
+    "thumbnail": "assets/data_projects/SGN_S/s1.png",
+    "screenshots": [
+      "assets/data_projects/SGN_S/s1.png",
+      "assets/data_projects/SGN_S/s2.png",
+      "assets/data_projects/SGN_S/1.png",
+      "assets/data_projects/SGN_S/2.png",
+      "assets/data_projects/SGN_S/3.png",
+      "assets/data_projects/SGN_S/4.png",
+      "assets/data_projects/SGN_S/5.png",
+      "assets/data_projects/SGN_S/6.png",
+      "assets/data_projects/SGN_S/7.png",
+      "assets/data_projects/SGN_S/8.png",
+      "assets/data_projects/SGN_S/9.png",
+      "assets/data_projects/SGN_S/10.png",
+      "assets/data_projects/SGN_S/11.png"
+    ],
+    "description": "API REST hecha en Spring Boot para la administración de una libreta de apuntes.",
+    "badges": [
+      "java",
+      "jwt",
+      "swagger",
+      "spring",
+      "maven",
+      "postman",
+      "mysql"
+    ],
+    "application_features": [
+      "Administra hojas e imágenes para usar como apuntes."
+    ],
+    "application_technical_features": [
+      "Documentación en Swagger UI.",
+      "Rutas protegidas con Spring Security y autorización mediante roles.",
+      "Antes de cada método se revisa que el recurso pertenezca al usuario que hizo la solicitud.",
+      "Contraseña encriptada con BCryptPasswordEncoder.",
+      "Autenticación mediante Bearer token JWT.",
+      "Respuestas acorde a la acción realizada (creado, actualizado, sin contenido, contenido no encontrado).",
+      "Base de datos MySQL con Hibernate.",
+      "Uso de JpaRepository.",
+      "Manejo de Querys para una respuesta rápida a las solicitudes.",
+      "Almacenamiento de archivos en el servidor."
     ]
   }
 
