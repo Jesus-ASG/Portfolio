@@ -10,7 +10,7 @@
 
   <div class="main-content">
     <div class="description my-3">
-      <p>Hola, tengo 23 años y soy recién egresado de
+      <p>Apasionado desarrollador de software egresado de
         Ingeniería en Ciencias de la Computación en la Benemérita Universidad Autónoma de Puebla
         <a href="https://www.buap.mx/" target="_blank" title="Ir a https://www.buap.mx/">
           <span><i class="fa fa-external-link fa-xs" aria-hidden="true"></i></span>.
@@ -20,11 +20,22 @@
 
     <div class="tools mt-3">
       <p class="fst-italic">Estas son mis principales tecnologías:</p>
-      <img src="assets/images/badges/django.svg" alt="django">
-      <img src="assets/images/badges/spring.svg" alt="spring">
-      <img src="assets/images/badges/python.svg" alt="python">
-      <img src="assets/images/badges/java.svg" alt="java">
+      <a [routerLink]="['/projects']" [queryParams]="{badge:'django'}">
+        <img src="assets/images/badges/django.svg" alt="django">
+      </a>
+      <a [routerLink]="['/projects']" [queryParams]="{badge:'spring'}">
+        <img src="assets/images/badges/spring.svg" alt="spring">
+      </a>
+      <a [routerLink]="['/projects']" [queryParams]="{badge:'python'}">
+        <img src="assets/images/badges/python.svg" alt="python">
+      </a>
+      <a [routerLink]="['/projects']" [queryParams]="{badge:'java'}">
+        <img src="assets/images/badges/java.svg" alt="java">
+      </a>
       <img src="assets/images/badges/angular.svg" alt="angular">
+      <a [routerLink]="['/projects']" [queryParams]="{badge:'laravel'}">
+        <img src="assets/images/badges/laravel.svg" alt="laravel">
+      </a>
       <br>
       <div class="my-3">
         <p (click)="seeMoreTechnologies()" class="bar-animation d-inline-block fw-bold fst-italic">{{
@@ -37,7 +48,7 @@
           <img src="assets/images/badges/android_studio.svg" alt="android_studio">
           <img src="assets/images/badges/unity.svg" alt="unity">
           <br>
-          <img src="assets/images/badges/laravel.svg" alt="laravel">
+
           <img src="assets/images/badges/php.svg" alt="php">
           <br>
           <img src="assets/images/badges/bootstrap.svg" alt="bootstrap">
@@ -61,10 +72,10 @@
             <p routerLink="/contact">Contacto</p>
           </div>
         </div>
-        
+
 
       </div>
     </div>
   </div>
-  
+
 </div>

@@ -48,10 +48,9 @@ export const project_sp = [
       "Ingresa con un usuario y contraseña para ver el recorrido de los lugares que se desean visitar.",
       "Muestra la ubicación del usuario en tiempo real.",
       "Muestra una lista de los lugares por visitar."
-
     ],
     "application_technical_features": [
-      "Aplicación móvil hecha en Java con Android Studio",
+      "Aplicación móvil hecha en Java con Android Studio.",
       "Funciona con la API de google maps.",
       "Hecho en Android Studio con java.",
       "Botones para alternar entre vista en mapa 2D o a satélite.",
@@ -227,6 +226,39 @@ export const project_sp = [
       "Uso de JpaRepository.",
       "Manejo de Querys para una respuesta rápida a las solicitudes.",
       "Almacenamiento de archivos en el servidor."
+    ]
+  },
+  {
+    "id": 8,
+    "priority": 75,
+    "name": "Accesos BUAP",
+    "thumbnail": "assets/data_projects/accesos_buap/la5.png",
+    "screenshots": [
+      "assets/data_projects/accesos_buap/la7.png",
+      "assets/data_projects/accesos_buap/la6.png",
+      "assets/data_projects/accesos_buap/la5.png",
+      "assets/data_projects/accesos_buap/la4.png",
+      "assets/data_projects/accesos_buap/la3.png",
+      "assets/data_projects/accesos_buap/la2.png",
+      "assets/data_projects/accesos_buap/la1.png"
+    ],
+    "description": "Mantener un control para el acceso de estudiantes a diversos lugares.\n",
+    "badges": [
+      "bootstrap",
+      "css3",
+      "html5",
+      "javascript",
+      "laravel",
+      "mysql",
+      "php"
+    ],
+    "application_features": [
+      "Es posible dar de alta lugares y alumnos, los alumnos se pueden cargar individualmente o a través de un archivo de trabajo como Excel, LibreOffice Calc o un archivo csv."
+    ],
+    "application_technical_features": [
+      "Diseñado con metodología Scrum.",
+      "Hecho en Laravel.",
+      "Uso de archivos para leer excel y crear múltiples entidades."
     ]
   }
 
