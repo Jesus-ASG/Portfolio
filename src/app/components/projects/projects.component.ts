@@ -2,6 +2,7 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DatabaseHandlerService } from 'src/app/services/database-handler.service';
 import { Project } from 'src/app/models/project';
+import { ProjectService } from 'src/app/services/project.service';
 
 
 @Component({
@@ -15,10 +16,21 @@ export class ProjectsComponent implements OnInit {
   constructor(
     private readonly router: ActivatedRoute,
     private readonly renderer: Renderer2,
-    private databaseHandler: DatabaseHandlerService
+    private databaseHandler: DatabaseHandlerService,
+    private projectService: ProjectService
   ) { }
 
   ngOnInit(): void {
+
+    this.projectService.getAll().subscribe({
+      next: (response: any) => {
+        console.log(response);
+      },
+      error: (error: any) => {
+        console.error('An error ocurred:', error);
+      }
+    })
+
     this.projects = this.databaseHandler.getProjects();
 
     this.projects = this.projects.sort((a, b) => { return b.priority - a.priority; });
