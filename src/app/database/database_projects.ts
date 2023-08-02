@@ -126,16 +126,16 @@ export const project_sp = [
     "name": "Nutri Race",
     "thumbnail": "assets/data_projects/nutri_race/Imagen8.png",
     "screenshots": [
-      "assets/data_projects/nutri_race/Imagen10.png",
-      "assets/data_projects/nutri_race/Imagen9.png",
-      "assets/data_projects/nutri_race/Imagen8.png",
-      "assets/data_projects/nutri_race/Imagen7.png",
-      "assets/data_projects/nutri_race/Imagen6.png",
-      "assets/data_projects/nutri_race/Imagen5.png",
-      "assets/data_projects/nutri_race/Imagen4.png",
-      "assets/data_projects/nutri_race/Imagen3.png",
+      "assets/data_projects/nutri_race/Imagen1.png",
       "assets/data_projects/nutri_race/Imagen2.png",
-      "assets/data_projects/nutri_race/Imagen1.png"
+      "assets/data_projects/nutri_race/Imagen3.png",
+      "assets/data_projects/nutri_race/Imagen4.png",
+      "assets/data_projects/nutri_race/Imagen5.png",
+      "assets/data_projects/nutri_race/Imagen6.png",
+      "assets/data_projects/nutri_race/Imagen7.png",
+      "assets/data_projects/nutri_race/Imagen8.png",
+      "assets/data_projects/nutri_race/Imagen9.png",
+      "assets/data_projects/nutri_race/Imagen10.png"
     ],
     "description": "Divertido juego estilo \"Endless Runner\".",
     "badges": [
@@ -234,13 +234,13 @@ export const project_sp = [
     "name": "Accesos BUAP",
     "thumbnail": "assets/data_projects/accesos_buap/la5.png",
     "screenshots": [
-      "assets/data_projects/accesos_buap/la7.png",
-      "assets/data_projects/accesos_buap/la6.png",
-      "assets/data_projects/accesos_buap/la5.png",
-      "assets/data_projects/accesos_buap/la4.png",
-      "assets/data_projects/accesos_buap/la3.png",
+      "assets/data_projects/accesos_buap/la1.png",
       "assets/data_projects/accesos_buap/la2.png",
-      "assets/data_projects/accesos_buap/la1.png"
+      "assets/data_projects/accesos_buap/la3.png",
+      "assets/data_projects/accesos_buap/la4.png",
+      "assets/data_projects/accesos_buap/la5.png",
+      "assets/data_projects/accesos_buap/la6.png",
+      "assets/data_projects/accesos_buap/la7.png"
     ],
     "description": "Mantener un control para el acceso de estudiantes a diversos lugares.\n",
     "badges": [
@@ -259,6 +259,67 @@ export const project_sp = [
       "Diseñado con metodología Scrum.",
       "Hecho en Laravel.",
       "Uso de archivos para leer excel y crear múltiples entidades."
+    ]
+  },
+  {
+    "id": 9,
+    "priority": 75,
+    "name": "Spring Boot Simple Game",
+    "thumbnail": "assets/data_projects/sb_mongodb_game/s2.png",
+    "screenshots": [
+      "assets/data_projects/sb_mongodb_game/s1.png",
+      "assets/data_projects/sb_mongodb_game/s2.png",
+      "assets/data_projects/sb_mongodb_game/s4.png",
+      "assets/data_projects/sb_mongodb_game/s5.png",
+      "assets/data_projects/sb_mongodb_game/s6.png",
+      "assets/data_projects/sb_mongodb_game/s7.png"
+    ],
+    "description": "Simple REST API for a game, made with Spring Boot and Mongo DB.",
+    "badges": [
+      "docker",
+      "java",
+      "maven",
+      "mongodb",
+      "spring",
+      "postman"
+    ],
+    "application_features": [
+      "Add your own players, skills and weapons for your game."
+    ],
+    "application_technical_features": [
+      "MongoDB allows you to keep a flexible database."
+    ]
+  },
+  {
+    "id": 10,
+    "priority": 75,
+    "name": "My Chat Application",
+    "thumbnail": "assets/data_projects/MyChatApp/s3.png",
+    "screenshots": [
+      "assets/data_projects/MyChatApp/s1.png",
+      "assets/data_projects/MyChatApp/s2.png",
+      "assets/data_projects/MyChatApp/s3.png",
+      "assets/data_projects/MyChatApp/s4.png",
+      "assets/data_projects/MyChatApp/s5.png",
+      "assets/data_projects/MyChatApp/s6.png",
+      "assets/data_projects/MyChatApp/s7.png",
+      "assets/data_projects/MyChatApp/s8.png"
+    ],
+    "description": "Chat application with web sockets, Spring Boot, JavaScript and bootstrap 5.",
+    "badges": [
+      "bootstrap",
+      "css3",
+      "html5",
+      "java",
+      "javascript",
+      "maven",
+      "spring"
+    ],
+    "application_features": [
+      "Enter your name and join into the chat with all people!"
+    ],
+    "application_technical_features": [
+      "Real time application with web sockets."
     ]
   }
 

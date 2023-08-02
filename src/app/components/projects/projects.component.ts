@@ -31,13 +31,13 @@ export class ProjectsComponent implements OnInit {
       }
     })
 
-    this.projects = this.databaseHandler.getProjects();
-
-    this.projects = this.projects.sort((a, b) => { return b.priority - a.priority; });
     this.renderer.setProperty(document.body, 'scrollTop', 0);
 
     this.router.queryParams.subscribe((res: any) => {
       if (res.badge) {
+        this.projects = this.databaseHandler.getProjects();
+        this.projects = this.projects.sort((a, b) => { return b.priority - a.priority; });
+
         let filterValues: any = [];
 
         if (typeof res.badge === 'string')
@@ -51,6 +51,10 @@ export class ProjectsComponent implements OnInit {
           });
         });
         this.projects = filteredArray;
+      }
+      else {
+        this.projects = this.databaseHandler.getProjects();
+        this.projects = this.projects.sort((a, b) => { return b.priority - a.priority; });
       }
     });
   }
